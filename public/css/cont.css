@@ -1,0 +1,132 @@
+
+
+/*footer*/
+.footer{
+    margin: 0.7em 0;
+	width: 85%;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+}
+.footer .social_handle{
+	font-size: 1.5em;
+	color: #fff;
+}
+.footer .social_handle i{
+	margin: 0 5px;
+}
+.footer #logo{
+    color: #fff;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+
+
+/*down arrow icon (this arrow visible when screen size will be 700px)*/
+#responsive_menu{
+	font-size: 2em;
+	color: #fff;
+	display: none;
+}
+
+/*these codes will only execute when the screen size will be 700px*/
+@media(max-width: 700px){
+	#responsive_menu{
+	   display: block;
+    }
+	.top_tracks{
+		width: 90%;
+	}
+	.user_comments,.mid_part{
+		width: 90%;
+	}
+	.comments{
+		min-height: 230px;
+		align-items: center;
+        flex-direction: column;
+	}
+	.comments .comment:not(:first-child){
+		margin-top: 15px;
+	}
+	.comments .comment{
+		width: 100%;
+		padding: 15px 10px;
+	}
+	.description .buttons a{
+	   font-size: 1em;
+    }
+    .description .buttons button{
+    	font-size: 1.2em;
+    	padding: 5px 15px;
+    }
+    .description #A_name{
+    	font-size: 2em;
+    }
+    .mid_part{
+    	height: 180px;
+    }
+    .nav_content{
+       position: absolute;
+       width: 200px;
+       top: 55px;
+       right: 0;
+       padding: 5px;
+       flex-direction: column;
+       background: rgba(0,0,0,0.9);
+       transition: 0.5s;
+       max-height: 0px;
+       overflow: hidden;
+    }
+    #total_download{
+    	display: none;
+    }
+    .nav_content li{
+    	margin: 5px;
+    }
+    #song_desc #message{
+    	bottom: 3px;
+    	font-size: 0.9em;
+    }
+    .mid_part img{
+       height: 200px;
+     }
+     .description .author_desc{
+	   width: 15em;
+	}
+	.popular_creator{
+		width: 95%;
+	}
+	.active_top_navbar{
+	   max-height: 100vh;     
+    }
+
+}
+
+/* & these codes will execute when the screen size will be 500px*/
+@media(max-width: 500px){
+    #song_desc p:nth-child(1){
+    	font-size: 0.9em;
+    }
+    .description .buttons button{
+    	font-size: 1.2em;
+    	padding: 5px 10px;
+    }
+    .description p{
+    	font-size: 0.88em;
+    }
+    .mid_part img{
+       height: 190px;
+     }
+    #actions a:first-child{
+	   display: none;
+    }
+    .description .author_desc{
+	   width: 12em;
+	}
+	.comments .comment{
+		padding-bottom: 25px;
+	}
+}
+
+/*by Dev Ideas*/
+/*finished 🤕*/
